@@ -12,7 +12,7 @@
 * **ClickHouse Database Integration:** Demonstrates interaction with a ClickHouse instance for high-performance analytical data storage.
 * **Serialization/Deserialization with Serde:** Utilizes `serde` for efficient and safe data serialization and deserialization.
 * **Configurable via Environment Variables:** Database and other sensitive configurations are managed through environment variables for secure and flexible deployment.
-* **Modular Project Structure:** Well-organized codebase with clear folder separation for different components (e.g., `src/models`, `src/services`, `src/db`).
+* **Modular Project Structure:** Well-organized codebase with clear folder separation for different components (e.g., `src/models`, `src/storage`, `src/traits`).
 
 ---
 
@@ -39,7 +39,7 @@
         └── users_models.rs
     └── pipeline/
         ├── mod.rs
-        └── defualt_pipeline.rs
+        └── default_pipeline.rs
     └── storage/
         ├── mod.rs
         └── storage.rs
