@@ -7,7 +7,7 @@ mod traits;
 mod utils;
 
 use crate::pipeline::default_pipeline::MockCalculator;
-use crate::storage::storage::ClickHouseStorage;
+use crate::models::storage_models::ClickHouseStorage;
 use crate::traits::calculate_user_stats_trait::StatsCalculator;
 use crate::traits::storage_trait::Storage;
 use crate::traits::transfer_trait::TransferGenerator;

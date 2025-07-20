@@ -7,7 +7,7 @@ mod tests {
 
     use mycrate::globals;
     use mycrate::models::users_models::Transfer;
-    use mycrate::storage::storage::ClickHouseStorage;
+    use mycrate::models::storage_models::ClickHouseStorage;
     use mycrate::traits::storage_trait::Storage;
 
     fn test_table() -> String {

@@ -1,14 +1,10 @@
 use anyhow::Context;
 use crate::models::users_models::Transfer;
+use crate::models::storage_models::ClickHouseStorage;
 use crate::traits::storage_trait::Storage;
 use async_trait::async_trait;
 use clickhouse::Client;
 
-#[derive(Clone)]
-pub struct ClickHouseStorage {
-    client: Client,
-    table: String,
-}
 
 impl ClickHouseStorage {
     pub fn new(database_url: &str, table: &str) -> Self {
