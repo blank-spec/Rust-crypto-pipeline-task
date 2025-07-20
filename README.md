@@ -24,8 +24,30 @@
 * **ClickHouse** (Database)
 * Other crates like `anyhow`,`dotenvy`
 
-## Local Setup
+### Local Setup
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/blank-spec/Rust-crypto-pipeline-task
+    cd Rust-crypto-pipeline-task
+    ```
+2.  **Start ClickHouse (using Docker):**
+    ```bash
+    docker run -d --name clickhouse-server -p 8123:8123 -p 9000:9000 --ulimit nofile=262144:262144 clickhouse/clickhouse-server
+    ```
+    * *Optional:* You might need to wait a few seconds for ClickHouse to fully initialize.
+    
+3.  **Configure Environment Variables:**
+    Edit a `.env` file in the root directory
 
+4.  **Run the application:**
+    ```bash
+    cargo run
+    ```
+
+### Running Tests
+```bash
+cargo test
+```
 
 ## Project structure
 ```
