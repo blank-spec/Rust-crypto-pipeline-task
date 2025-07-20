@@ -1,4 +1,4 @@
-# Rust-crypto-pipeline-task
+# Production-grade data ingestion pipeline written in Rust for high-frequency crypto analytics
 
 
 ---
